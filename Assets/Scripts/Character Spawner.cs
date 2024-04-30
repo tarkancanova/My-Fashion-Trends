@@ -13,13 +13,13 @@ public class CharacterSpawner : MonoBehaviour
         switch (PlayerPrefs.GetInt("Character"))
         {
             case 1:
-                Instantiate(_firstChar);
+                _firstChar.SetActive(true);
                 break;            
             case 2:
-                Instantiate(_secondChar);
+                _secondChar.SetActive(true);
                 break;            
             case 3:
-                Instantiate(_thirdChar);
+                _thirdChar.SetActive(true);
                 break;
         }
     }

@@ -7,6 +7,7 @@ public class ModelUpperBodyController : MonoBehaviour
 {
     [SerializeField] private GameObject _upperBodyModelsObject;
     private int _currentUpperBodyIndex = 0;
+    [SerializeField] private ModelDressController _modelDressController;
 
     private GameObject[] _upperBodyModels;
 
@@ -26,10 +27,20 @@ public class ModelUpperBodyController : MonoBehaviour
 
     public void ChangeUpperBodyModel(int newIndex)
     {
+        _modelDressController.RemoveAllDress();
+
         _upperBodyModels[_currentUpperBodyIndex].SetActive(false);
 
         _upperBodyModels[newIndex].SetActive(true);
 
         _currentUpperBodyIndex = newIndex;
+    }
+
+    public void RemoveAllUpperBody()
+    {
+        foreach (var model in _upperBodyModels)
+        {
+            model.gameObject.SetActive(false);
+        }
     }
 }
