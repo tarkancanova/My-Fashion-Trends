@@ -1,0 +1,112 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="SK_Skirt_PhysicsAsset" ExportPath="/Script/Engine.PhysicsAsset'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset'"
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_6" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_6'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_1'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_11" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_11'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_2'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_3'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_8" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_8'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_9" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_9'"
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_0'"
+      DefaultInstance=(JointName="lowerarm_l",ConstraintBone1="lowerarm_l",ConstraintBone2="pelvis",Pos2=(X=16.850941,Y=-9.913784,Z=-33.799076),PriAxis2=(X=0.472576,Y=-0.439380,Z=-0.763949),SecAxis2=(X=-0.743430,Y=-0.664270,Z=-0.077832))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_1'"
+      DefaultInstance=(JointName="thigh_l",ConstraintBone1="thigh_l",ConstraintBone2="pelvis",Pos2=(X=-5.524639,Y=0.911107,Z=-9.379921),PriAxis2=(X=-0.987387,Y=0.143454,Z=0.066994),SecAxis2=(X=0.099301,Y=0.231539,Z=0.967744),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_2'"
+      DefaultInstance=(JointName="thigh_r",ConstraintBone1="thigh_r",ConstraintBone2="pelvis",Pos2=(X=-5.524438,Y=0.911095,Z=9.379902),PriAxis2=(X=-0.987387,Y=0.143454,Z=0.066994),SecAxis2=(X=0.099301,Y=0.231539,Z=0.967744))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_3'"
+      DefaultInstance=(JointName="hand_r",ConstraintBone1="hand_r",ConstraintBone2="lowerarm_r",Pos2=(X=-28.524052,Y=-0.000038,Z=0.000012),PriAxis2=(X=0.981306,Y=-0.181188,Z=-0.064880),SecAxis2=(X=0.147638,Y=0.492470,Z=0.857715))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_4'"
+      DefaultInstance=(JointName="hand_l",ConstraintBone1="hand_l",ConstraintBone2="lowerarm_l",Pos2=(X=28.523939,Y=-0.000000,Z=-0.000002),PriAxis2=(X=0.981306,Y=-0.181188,Z=-0.064880),SecAxis2=(X=0.147638,Y=0.492471,Z=0.857715))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_6" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:PhysicsConstraintTemplate_6'"
+      DefaultInstance=(JointName="lowerarm_r",ConstraintBone1="lowerarm_r",ConstraintBone2="pelvis",Pos2=(X=16.850969,Y=-9.913799,Z=33.799095),PriAxis2=(X=0.472576,Y=-0.439380,Z=-0.763949),SecAxis2=(X=-0.743430,Y=-0.664270,Z=-0.077832))
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_0'"
+      bSkipScaleFromAnimation=True
+      AggGeom=(SphylElems=((Center=(X=-6.684001,Y=-0.651112,Z=-0.000001),Rotation=(Pitch=0.000014,Yaw=-93.184433,Roll=0.000006),Radius=12.514462,Length=6.750000)))
+      BoneName="pelvis"
+      PhysicsType=PhysType_Kinematic
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_1'"
+      AggGeom=(SphylElems=((Center=(X=10.542368,Y=0.618276,Z=-0.066512),Rotation=(Pitch=-5.222881,Yaw=90.565834,Roll=89.478661),Radius=3.755000,Length=19.000000)))
+      BoneName="lowerarm_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_11" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_11'"
+      AggGeom=(SphylElems=((Center=(X=-10.542368,Y=-0.618276,Z=-0.066512),Rotation=(Pitch=-5.222881,Yaw=-89.434166,Roll=89.478661),Radius=3.755000,Length=19.000000)))
+      BoneName="lowerarm_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_2'"
+      AggGeom=(SphylElems=((Center=(X=-18.923605,Y=0.152555,Z=-0.387361),Rotation=(Pitch=-1.192619,Yaw=94.374115,Roll=-81.680519),Radius=10.952589,Length=21.770189),(Center=(X=-5.708942,Y=0.910348,Z=2.052912),Rotation=(Pitch=72.075768,Yaw=89.162994,Roll=78.947853),Radius=10.750000,Length=4.750000)))
+      BoneName="thigh_l"
+      PhysicsType=PhysType_Simulated
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_3'"
+      AggGeom=(SphylElems=((Center=(X=18.913975,Y=0.168141,Z=0.979554),Rotation=(Pitch=1.481543,Yaw=-86.002968,Roll=-98.221977),Radius=10.702589,Length=22.020189),(Center=(X=5.708934,Y=-0.910464,Z=-2.052881),Rotation=(Pitch=72.075821,Yaw=89.163918,Roll=78.950638),Radius=10.750000,Length=4.750000)))
+      BoneName="thigh_r"
+      PhysicsType=PhysType_Simulated
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_8" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_8'"
+      AggGeom=(SphylElems=((Rotation=(Pitch=44.334026,Yaw=-89.590317,Roll=-82.705948),Radius=4.505000,Length=5.250000)))
+      BoneName="hand_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_9" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_Skirt_PhysicsAsset.SK_Skirt_PhysicsAsset:SkeletalBodySetup_9'"
+      AggGeom=(SphylElems=((Rotation=(Pitch=44.334023,Yaw=90.409676,Roll=-82.705940),Radius=4.505000,Length=5.250000)))
+      BoneName="hand_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   PreviewSkeletalMesh="/Game/CasualGirl/Mesh/Clothes/SkirtMini/SK_SkirtMiniA.SK_SkirtMiniA"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   BoundsBodies(5)=5
+   BoundsBodies(6)=6
+   SkeletalBodySetups(0)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_0'"
+   SkeletalBodySetups(1)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_2'"
+   SkeletalBodySetups(2)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_3'"
+   SkeletalBodySetups(3)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_8'"
+   SkeletalBodySetups(4)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_9'"
+   SkeletalBodySetups(5)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_11'"
+   SkeletalBodySetups(6)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_1'"
+   ConstraintSetup(0)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_1'"
+   ConstraintSetup(1)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_2'"
+   ConstraintSetup(2)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_3'"
+   ConstraintSetup(3)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_4'"
+   ConstraintSetup(4)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_6'"
+   ConstraintSetup(5)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_0'"
+   SolverSettings=(CullDistance=1.000000,bUseLinearJointSolver=False)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+End Object
