@@ -7,6 +7,8 @@ TagManager:
   - Character1
   - Character2
   - Character3
+  - BackgroundContinue
+  - CharacterContinue
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private int _selectedBackground;
     [SerializeField] private TMP_Text _selectedCharacterText;
     [SerializeField] private TMP_Text _selectedBackgroundText;
+    [SerializeField] private ProgressionData _progressionData;
 
 
     private void Awake()
@@ -87,17 +88,47 @@ public class MainMenu : MonoBehaviour
     //BACKGROUND SCREEN
     public void OnBackgroundSelectionContinueButtonPressed()
     {
-        switch (_selectedBackground)
+        if (!_progressionData.sceneTwoUnlocked)
         {
-            case 1:
-                PlayerPrefs.SetInt("Background", _selectedBackground);
-                break;
-            case 2:
-                PlayerPrefs.SetInt("Background", _selectedBackground);
-                break;
-            case 3:
-                PlayerPrefs.SetInt("Background", _selectedBackground);
-                break;
+            switch (_selectedBackground)
+            {    
+                case 1:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+                case 2:
+                    return;
+                case 3:
+                    return;
+            }
+        }
+        else if (!_progressionData.sceneTwoUnlocked & !_progressionData.sceneThreeUnlocked)
+        {
+            switch (_selectedBackground)
+            {
+                case 1:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+                case 2:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+                case 3:
+                    return;
+            }
+        }
+        else if (_progressionData.sceneThreeUnlocked)
+        {
+            switch (_selectedBackground)
+            {
+                case 1:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+                case 2:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+                case 3:
+                    PlayerPrefs.SetInt("Background", _selectedBackground);
+                    break;
+            }
         }
 
         SceneManager.LoadScene("Game Scene");
