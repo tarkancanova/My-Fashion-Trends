@@ -7,6 +7,11 @@ public class BackgroundButtons : MonoBehaviour
 {
     public int backgroundIndex;
 
+    private void Awake()
+    {
+        PlayerPrefs.SetInt("Background", 1);
+    }
+
     private void Start()
     {
         Button button = GetComponent<Button>();

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3684468fc8d99ba4ab54e364bcfbacdb, type: 3}
   m_Name: Progression Data
   m_EditorClassIdentifier: 
-  sceneTwoUnlocked: 1
+  sceneTwoUnlocked: 0
   sceneThreeUnlocked: 0
