@@ -949,9 +949,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1241,9 +1241,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFive
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1433,9 +1433,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSix
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1739,9 +1739,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSix
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2116,9 +2116,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2425,9 +2425,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2583,9 +2583,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonNine
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3457,9 +3457,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4487,9 +4487,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5094,9 +5094,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5258,9 +5258,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5678,6 +5678,44 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &411626724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411626725}
+  m_Layer: 5
+  m_Name: Completion Bar Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &411626725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411626724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 618784110}
+  - {fileID: 1881864538}
+  - {fileID: 893384719}
+  m_Father: {fileID: 744986647}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &423226991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,9 +5934,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6638,9 +6676,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7236,9 +7274,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7997,7 +8035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &595341931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8013,10 +8051,10 @@ RectTransform:
   - {fileID: 26842546}
   m_Father: {fileID: 744986647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1187.4341, y: -521.4683}
-  m_SizeDelta: {x: 121.1317, y: 111.0633}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -92.56592, y: 69.53168}
+  m_SizeDelta: {x: 121.131714, y: 111.06329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595341932
 MonoBehaviour:
@@ -8281,6 +8319,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615304547}
+  m_CullTransparentMesh: 1
+--- !u!1 &618784109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618784110}
+  - component: {fileID: 618784112}
+  - component: {fileID: 618784111}
+  m_Layer: 5
+  m_Name: Border
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &618784110
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618784109}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411626725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 497.51453, y: 55.358562}
+  m_SizeDelta: {x: 73.1051, y: 224.921}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &618784111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618784109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 705bd3b73407d4d4ebe8491a245d1cac,
+    type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &618784112
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618784109}
   m_CullTransparentMesh: 1
 --- !u!1 &637813195
 GameObject:
@@ -8684,9 +8798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9356,9 +9470,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSix
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9541,6 +9655,7 @@ RectTransform:
   - {fileID: 445766718}
   - {fileID: 1718179363}
   - {fileID: 595341931}
+  - {fileID: 411626725}
   m_Father: {fileID: 1875573082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9646,9 +9761,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFive
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9818,9 +9933,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFour
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10171,9 +10286,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10339,6 +10454,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &893384718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893384719}
+  - component: {fileID: 893384721}
+  - component: {fileID: 893384720}
+  - component: {fileID: 893384722}
+  m_Layer: 5
+  m_Name: Completion Bar Filler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &893384719
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893384718}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411626725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 497.43, y: 54.637}
+  m_SizeDelta: {x: 50.004, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &893384720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893384718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.4379828, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 705bd3b73407d4d4ebe8491a245d1cac,
+    type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &893384721
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893384718}
+  m_CullTransparentMesh: 1
+--- !u!114 &893384722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893384718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 381725f6fa162fe4aaff086786164a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fillSpeed: 1
+  _continueButton: {fileID: 595341930}
 --- !u!1001 &905768912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10697,9 +10903,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFour
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10869,9 +11075,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11151,9 +11357,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonEight
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11299,11 +11505,11 @@ Transform:
   m_GameObject: {fileID: 1019474104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 644.80804, y: 246.84848, z: -21.42231}
+  m_LocalPosition: {x: 68.801636, y: -4.998932, z: -14.664131}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1875573082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1019474108
 MonoBehaviour:
@@ -11401,8 +11607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0014915, y: -369.51453}
-  m_SizeDelta: {x: 216.09, y: 1295.3389}
+  m_AnchoredPosition: {x: -0.0014915, y: -11.6093}
+  m_SizeDelta: {x: 216.09, y: 579.5285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1066159054
 MonoBehaviour:
@@ -11739,9 +11945,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12031,9 +12237,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12217,9 +12423,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12523,9 +12729,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonTwo
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13782,9 +13988,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14343,9 +14549,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15858,9 +16064,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16350,9 +16556,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17000,9 +17206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonThree
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17481,9 +17687,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFour
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18122,9 +18328,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFive
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18569,9 +18775,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18747,9 +18953,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSeven
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19039,9 +19245,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFive
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19439,6 +19645,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 744986647}
+  - {fileID: 1019474107}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1881078581
@@ -19520,6 +19727,82 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 345011547}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1881864537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881864538}
+  - component: {fileID: 1881864541}
+  - component: {fileID: 1881864540}
+  m_Layer: 5
+  m_Name: Completion Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1881864538
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881864537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411626725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 497.43414, y: 54.63655}
+  m_SizeDelta: {x: 50, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1881864540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881864537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 705bd3b73407d4d4ebe8491a245d1cac,
+    type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1881864541
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881864537}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1889345144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19811,9 +20094,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFour
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20962,9 +21245,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonFour
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21493,9 +21776,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21719,9 +22002,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairSelection, Assembly-CSharp
-        m_MethodName: OnClickButtonSix
+      - m_Target: {fileID: 893384722}
+        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
+        m_MethodName: UpdateProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22114,4 +22397,3 @@ SceneRoots:
   - {fileID: 1875573082}
   - {fileID: 1489682338}
   - {fileID: 1203010650}
-  - {fileID: 1019474107}
