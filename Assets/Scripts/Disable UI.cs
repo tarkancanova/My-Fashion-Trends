@@ -4,11 +4,31 @@ using UnityEngine;
 
 public class DisableUI : MonoBehaviour
 {
-    [SerializeField] private GameObject _UI;
+    [SerializeField] private GameObject _mainUI;
+    [SerializeField] private GameObject _dressMenu;
+    [SerializeField] private GameObject _completionBar;
+    [SerializeField] private GameObject _continueButton;
+    [SerializeField] private GameObject _continueToMainMenu;
 
+
+
+    public void OnContinueButtonClick()
+    {
+        CloseUI();
+        ActivateContinueButton();
+    }
 
     public void CloseUI()
     {
-        _UI.SetActive(false);
+        _mainUI.SetActive(false);
+        _completionBar.SetActive(false);
+        _dressMenu.SetActive(false);
+        _continueButton.SetActive(false);
+
+    }
+
+    public void ActivateContinueButton()
+    {
+        _continueToMainMenu.SetActive(true);
     }
 }
