@@ -15,7 +15,7 @@ public class DisableUI : MonoBehaviour
     public void OnContinueButtonClick()
     {
         CloseUI();
-        ActivateContinueButton();
+        Invoke(nameof(ActivateContinueButton), 0.5f);
     }
 
     public void CloseUI()
