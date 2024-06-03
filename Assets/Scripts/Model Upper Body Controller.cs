@@ -7,7 +7,6 @@ public class ModelUpperBodyController : MonoBehaviour
 {
     [SerializeField] private GameObject _upperBodyModelsObject;
     private int _currentUpperBodyIndex = 0;
-    [SerializeField] private ModelDressController _modelDressController;
 
     private GameObject[] _upperBodyModels;
 
@@ -27,7 +26,6 @@ public class ModelUpperBodyController : MonoBehaviour
 
     public void ChangeUpperBodyModel(int newIndex)
     {
-        _modelDressController.RemoveAllDress();
 
         _upperBodyModels[_currentUpperBodyIndex].SetActive(false);
 

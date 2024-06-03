@@ -6,7 +6,6 @@ using UnityEngine;
 public class ModelLowerBodyController : MonoBehaviour
 {
     [SerializeField] private GameObject _lowerBodyModelsObject;
-    [SerializeField] private ModelDressController _modelDressController;
     private int _currentLowerBodyIndex = 0;
 
     private GameObject[] _lowerBodyModels;
@@ -27,7 +26,6 @@ public class ModelLowerBodyController : MonoBehaviour
 
     public void ChangeLowerBodyModel(int newIndex)
     {
-        _modelDressController.RemoveAllDress();
 
         _lowerBodyModels[_currentLowerBodyIndex].SetActive(false);
 

@@ -16,10 +16,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Collections;
+using UnityEngine.Networking;
 
 public class ScreenshotManager : MonoBehaviour
 {
     public RawImage displayImage; // UI RawImage element for displaying the screenshot
+    public float delay = 0.5f; // Adjustable delay for screenshot saving
 
     public void TakeScreenshot()
     {
@@ -27,38 +29,52 @@ public class ScreenshotManager : MonoBehaviour
         string filePath = Path.Combine(Application.persistentDataPath, screenshotFilename);
 
         ScreenCapture.CaptureScreenshot(filePath);
-
         StartCoroutine(LoadScreenshot(filePath));
     }
 
     IEnumerator LoadScreenshot(string filePath)
     {
-
         // Wait for the screenshot to be saved
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(delay);
 
         if (File.Exists(filePath))
         {
-            byte[] byteArray = File.ReadAllBytes(filePath);
-            Texture2D texture = new Texture2D(2, 2);
-            bool isLoaded = texture.LoadImage(byteArray);
+            using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture("file://" + filePath))
+            {
+                yield return uwr.SendWebRequest();
 
-            if (isLoaded)
-            {
-                displayImage.texture = texture;
-                displayImage.gameObject.SetActive(true);
-                Debug.Log("Screenshot displayed: " + filePath);
-            }
-            else
-            {
-                Debug.Log("Failed to load screenshot: " + filePath);
+                if (uwr.result == UnityWebRequest.Result.Success)
+                {
+                    Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
+
+                    if (texture != null)
+                    {
+                        if (displayImage != null)
+                        {
+                            displayImage.texture = texture;
+                            displayImage.gameObject.SetActive(true);
+                            Debug.Log("Screenshot displayed: " + filePath);
+                        }
+                        else
+                        {
+                            Debug.LogError("displayImage is not assigned.");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("Failed to create Texture2D from screenshot: " + filePath);
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Failed to load screenshot: " + filePath + ", Error: " + uwr.error);
+                }
             }
         }
         else
         {
-            Debug.Log("Screenshot file not found: " + filePath);
+            Debug.LogError("Screenshot file not found: " + filePath);
         }
-
     }
 }
 

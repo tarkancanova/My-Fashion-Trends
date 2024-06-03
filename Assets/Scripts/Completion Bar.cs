@@ -17,6 +17,7 @@ public class CompletionBar : MonoBehaviour
     {
         _image = GetComponent<Image>();
         _currentProgression = 0;
+        
     }
 
     private void Update()
@@ -32,14 +33,12 @@ public class CompletionBar : MonoBehaviour
 
     public void FillTheBar()
     {
-        
-        float targetFillAmount = _currentProgression/_maxProgression;
-        _image.DOFillAmount(targetFillAmount, _fillSpeed);
+        this.GetComponent<Slider>().value += 0.05f;
     }
 
     private void ActivateContinueButton()
     {
-        if (_currentProgression >= _maxProgression)
+        if (this.GetComponent<Slider>().value >= 1)
         {
             _continueButton.SetActive(true);
         }

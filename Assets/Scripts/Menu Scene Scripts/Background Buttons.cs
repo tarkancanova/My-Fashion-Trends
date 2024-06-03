@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class BackgroundButtons : MonoBehaviour
 {
     public int backgroundIndex;
+    [SerializeField] private GameObject _backgroundsObject;
+    [SerializeField] private GameObject _backgroundSelectionUI;
+    [SerializeField] private GameObject _inGameUI;
 
     private void Awake()
     {
@@ -23,6 +26,12 @@ public class BackgroundButtons : MonoBehaviour
 
     private void OnClickButton()
     {
-        PlayerPrefs.SetInt("Background", backgroundIndex);
+        _backgroundSelectionUI.SetActive(false);
+        for(int i = 0; i < _backgroundsObject.transform.childCount; i++)
+        {
+            _backgroundsObject.transform.GetChild(i).gameObject.SetActive(false);
+        }
+        _backgroundsObject.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
+        _inGameUI.SetActive(true);
     }
 }

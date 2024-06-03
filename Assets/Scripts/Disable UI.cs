@@ -5,10 +5,7 @@ using UnityEngine;
 public class DisableUI : MonoBehaviour
 {
     [SerializeField] private GameObject _mainUI;
-    [SerializeField] private GameObject _dressMenu;
-    [SerializeField] private GameObject _completionBar;
-    [SerializeField] private GameObject _continueButton;
-    [SerializeField] private GameObject _continueToMainMenu;
+    [SerializeField] private GameObject _nextLevel;
 
 
 
@@ -21,14 +18,12 @@ public class DisableUI : MonoBehaviour
     public void CloseUI()
     {
         _mainUI.SetActive(false);
-        _completionBar.SetActive(false);
-        _dressMenu.SetActive(false);
-        _continueButton.SetActive(false);
+
 
     }
 
     public void ActivateContinueButton()
     {
-        _continueToMainMenu.SetActive(true);
+        _nextLevel.SetActive(true);
     }
 }
