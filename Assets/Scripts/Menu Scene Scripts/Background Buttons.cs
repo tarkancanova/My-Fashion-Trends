@@ -1,37 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BackgroundButtons : MonoBehaviour
+public class BackgroundManager : MonoBehaviour
 {
-    public int backgroundIndex;
-    [SerializeField] private GameObject _backgroundsObject;
     [SerializeField] private GameObject _backgroundSelectionUI;
+    [SerializeField] private GameObject _backgroundsObject;
     [SerializeField] private GameObject _inGameUI;
-
-    private void Awake()
-    {
-        PlayerPrefs.SetInt("Background", 1);
-    }
+    [SerializeField] private ProgressionData _progData;
 
     private void Start()
     {
-        Button button = GetComponent<Button>();
-        if (button != null)
+
+        for (int i = 0; i < this.transform.childCount; i++)
         {
-            button.onClick.AddListener(OnClickButton);
+            GameObject child = this.transform.GetChild(i).gameObject;
+            Button button = child.GetComponent<Button>();
+
+            if (button != null)
+            {
+                int capturedIndex = i;
+                button.onClick.AddListener(() => OnClickButton(capturedIndex));
+            }
         }
+
     }
 
-    private void OnClickButton()
+    private void OnClickButton(int backgroundIndex)
     {
+
+        if (_progData.playerProgression < backgroundIndex) return;
+
+
         _backgroundSelectionUI.SetActive(false);
-        for(int i = 0; i < _backgroundsObject.transform.childCount; i++)
+
+        for (int i = 0; i < _backgroundsObject.transform.childCount; i++)
         {
             _backgroundsObject.transform.GetChild(i).gameObject.SetActive(false);
         }
-        _backgroundsObject.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
+
+        if (backgroundIndex >= 0 && backgroundIndex < _backgroundsObject.transform.childCount)
+        {
+            _backgroundsObject.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
+        }
+
+
         _inGameUI.SetActive(true);
+
     }
 }

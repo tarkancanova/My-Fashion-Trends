@@ -5,6 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Progression Data")]
 public class ProgressionData : ScriptableObject
 {
-    public bool sceneTwoUnlocked;
-    public bool sceneThreeUnlocked;
+    public int playerProgression = 0;
 }

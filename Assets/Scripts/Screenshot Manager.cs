@@ -12,68 +12,40 @@
 //    }
 //}
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using System.Collections;
-using UnityEngine.Networking;
 
 public class ScreenshotManager : MonoBehaviour
 {
     public RawImage displayImage; // UI RawImage element for displaying the screenshot
-    public float delay = 0.5f; // Adjustable delay for screenshot saving
+    public float delay = 0.5f; // Adjustable delay for screenshot capturing
 
     public void TakeScreenshot()
     {
-        string screenshotFilename = "Screenshot_" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
-        string filePath = Path.Combine(Application.persistentDataPath, screenshotFilename);
-
-        ScreenCapture.CaptureScreenshot(filePath);
-        StartCoroutine(LoadScreenshot(filePath));
+        StartCoroutine(CaptureScreenshot());
     }
 
-    IEnumerator LoadScreenshot(string filePath)
+    IEnumerator CaptureScreenshot()
     {
-        // Wait for the screenshot to be saved
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForEndOfFrame();
 
-        if (File.Exists(filePath))
+        // Create a Texture2D with screen width and height
+        Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+        // Read the screen contents into the texture
+        texture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        texture.Apply();
+
+        // Assign the texture to the RawImage component
+        if (displayImage != null)
         {
-            using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture("file://" + filePath))
-            {
-                yield return uwr.SendWebRequest();
-
-                if (uwr.result == UnityWebRequest.Result.Success)
-                {
-                    Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
-
-                    if (texture != null)
-                    {
-                        if (displayImage != null)
-                        {
-                            displayImage.texture = texture;
-                            displayImage.gameObject.SetActive(true);
-                            Debug.Log("Screenshot displayed: " + filePath);
-                        }
-                        else
-                        {
-                            Debug.LogError("displayImage is not assigned.");
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogError("Failed to create Texture2D from screenshot: " + filePath);
-                    }
-                }
-                else
-                {
-                    Debug.LogError("Failed to load screenshot: " + filePath + ", Error: " + uwr.error);
-                }
-            }
+            displayImage.texture = texture;
+            displayImage.gameObject.SetActive(true);
+            Debug.Log("Screenshot displayed.");
         }
         else
         {
-            Debug.LogError("Screenshot file not found: " + filePath);
+            Debug.LogError("displayImage is not assigned.");
         }
     }
 }
