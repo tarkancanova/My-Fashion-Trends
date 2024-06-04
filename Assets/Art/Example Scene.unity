@@ -357,6 +357,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 4
 --- !u!114 &7450250
 MonoBehaviour:
@@ -843,6 +845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 6
 --- !u!114 &22235932
 MonoBehaviour:
@@ -1484,6 +1488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 0
 --- !u!114 &42536209
 MonoBehaviour:
@@ -1955,6 +1961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 0
 --- !u!114 &68633166
 MonoBehaviour:
@@ -2222,6 +2230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 5
 --- !u!114 &96032227
 MonoBehaviour:
@@ -2530,6 +2540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 7
 --- !u!114 &151679438
 MonoBehaviour:
@@ -2999,6 +3011,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 6
 --- !u!114 &190561959
 MonoBehaviour:
@@ -3241,6 +3255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 3
 --- !u!114 &202041918
 MonoBehaviour:
@@ -3408,6 +3424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 3
 --- !u!114 &205641790
 MonoBehaviour:
@@ -4449,6 +4467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 5
 --- !u!114 &271850334
 MonoBehaviour:
@@ -5635,6 +5655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 9
 --- !u!114 &344068001
 MonoBehaviour:
@@ -6012,6 +6034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fillSpeed: 1
   _continueButton: {fileID: 1718580163}
+  clickedCategory: 
 --- !u!1 &364324859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7453,6 +7476,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 6
 --- !u!114 &420627835
 MonoBehaviour:
@@ -7770,6 +7795,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 1
 --- !u!114 &424262992
 MonoBehaviour:
@@ -8126,19 +8153,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 441951132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &441951132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8190,7 +8205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 13
+  category: UpperBody
 --- !u!1 &442721117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8638,6 +8655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 4
 --- !u!1 &464039488
 GameObject:
@@ -8870,6 +8889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 10
 --- !u!114 &469690432
 MonoBehaviour:
@@ -9431,6 +9452,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 4
 --- !u!114 &489622765
 MonoBehaviour:
@@ -10343,19 +10366,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 528927083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &528927083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10407,7 +10418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 4
+  category: UpperBody
 --- !u!1 &530232347
 GameObject:
   m_ObjectHideFlags: 0
@@ -11133,6 +11146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 5
 --- !u!1 &586709937
 GameObject:
@@ -11715,6 +11730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 11
 --- !u!114 &599865703
 MonoBehaviour:
@@ -13716,19 +13733,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 699542225}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &699542225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13780,7 +13785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 15
+  category: UpperBody
 --- !u!1 &702904979
 GameObject:
   m_ObjectHideFlags: 0
@@ -14701,19 +14708,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 751898112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &751898112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14765,7 +14760,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 10
+  category: UpperBody
 --- !u!1 &753310451
 GameObject:
   m_ObjectHideFlags: 0
@@ -15880,19 +15877,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 831627098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &831627098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15944,7 +15929,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 1
+  category: UpperBody
 --- !u!1 &832731605
 GameObject:
   m_ObjectHideFlags: 0
@@ -16632,6 +16619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 13
 --- !u!114 &864496797
 MonoBehaviour:
@@ -18038,6 +18027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 2
 --- !u!114 &956540207
 MonoBehaviour:
@@ -19672,6 +19663,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 13
 --- !u!114 &1027328941
 MonoBehaviour:
@@ -19914,6 +19907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 9
 --- !u!114 &1040094544
 MonoBehaviour:
@@ -20386,6 +20381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 7
 --- !u!114 &1061404004
 MonoBehaviour:
@@ -20676,19 +20673,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1065993431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1065993431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20740,7 +20725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 8
+  category: UpperBody
 --- !u!1 &1066275555
 GameObject:
   m_ObjectHideFlags: 0
@@ -21263,19 +21250,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1087724431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1087724431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21327,7 +21302,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 3
+  category: UpperBody
 --- !u!1 &1088193361
 GameObject:
   m_ObjectHideFlags: 0
@@ -21622,6 +21599,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 5
 --- !u!114 &1117544139
 MonoBehaviour:
@@ -21969,6 +21948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 8
 --- !u!114 &1127970675
 MonoBehaviour:
@@ -22593,6 +22574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 3
 --- !u!114 &1150429035
 MonoBehaviour:
@@ -23113,19 +23096,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1169438683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1169438683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23177,7 +23148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 11
+  category: UpperBody
 --- !u!1 &1170288225
 GameObject:
   m_ObjectHideFlags: 0
@@ -23316,6 +23289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 9
 --- !u!114 &1173269527
 MonoBehaviour:
@@ -24854,6 +24829,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 2
 --- !u!114 &1224716069
 MonoBehaviour:
@@ -25889,19 +25866,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1278940428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1278940428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25953,7 +25918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 14
+  category: UpperBody
 --- !u!1 &1280861988
 GameObject:
   m_ObjectHideFlags: 0
@@ -26290,6 +26257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 14
 --- !u!114 &1298542039
 MonoBehaviour:
@@ -26806,19 +26775,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1319780667}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1319780667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26870,7 +26827,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 7
+  category: UpperBody
 --- !u!1 &1328099543
 GameObject:
   m_ObjectHideFlags: 0
@@ -26925,6 +26884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 2
 --- !u!114 &1328099546
 MonoBehaviour:
@@ -27983,6 +27944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 1
 --- !u!114 &1368392408
 MonoBehaviour:
@@ -28507,19 +28470,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394705568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1394705568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28571,7 +28522,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 5
+  category: UpperBody
 --- !u!1 &1401617986
 GameObject:
   m_ObjectHideFlags: 0
@@ -28626,6 +28579,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 11
 --- !u!114 &1401617989
 MonoBehaviour:
@@ -28793,6 +28748,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 4
 --- !u!114 &1402704737
 MonoBehaviour:
@@ -28997,6 +28954,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 12
 --- !u!114 &1412067152
 MonoBehaviour:
@@ -29254,6 +29213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 7
 --- !u!114 &1423354986
 MonoBehaviour:
@@ -29905,6 +29866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 11
 --- !u!114 &1457328575
 MonoBehaviour:
@@ -30072,6 +30035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 9
 --- !u!114 &1458682216
 MonoBehaviour:
@@ -30332,6 +30297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 5
 --- !u!114 &1467528836
 MonoBehaviour:
@@ -30741,19 +30708,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1484715471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1484715471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30805,7 +30760,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 12
+  category: UpperBody
 --- !u!1 &1486810315
 GameObject:
   m_ObjectHideFlags: 0
@@ -30860,6 +30817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 4
 --- !u!114 &1486810318
 MonoBehaviour:
@@ -31401,19 +31360,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1516532598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1516532598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31465,7 +31412,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 6
+  category: UpperBody
 --- !u!1 &1517619110
 GameObject:
   m_ObjectHideFlags: 0
@@ -32041,6 +31990,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 6
 --- !u!114 &1536989721
 MonoBehaviour:
@@ -32547,6 +32498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 8
 --- !u!114 &1555573862
 MonoBehaviour:
@@ -34334,6 +34287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 0
 --- !u!114 &1627157183
 MonoBehaviour:
@@ -34771,6 +34726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 6
 --- !u!114 &1633414259
 MonoBehaviour:
@@ -35053,6 +35010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 8
 --- !u!114 &1653456179
 MonoBehaviour:
@@ -35629,6 +35588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 1
 --- !u!1 &1688346213
 GameObject:
@@ -35829,6 +35790,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 2
 --- !u!1 &1696240152
 GameObject:
@@ -35884,6 +35847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 0
 --- !u!114 &1696240155
 MonoBehaviour:
@@ -36051,6 +36016,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 3
 --- !u!114 &1698104405
 MonoBehaviour:
@@ -36308,6 +36275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 14
 --- !u!114 &1706426279
 MonoBehaviour:
@@ -36571,6 +36540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 15
 --- !u!114 &1712089967
 MonoBehaviour:
@@ -38059,19 +38030,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763794294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1763794294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38123,7 +38082,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 2
+  category: UpperBody
 --- !u!1 &1764228876
 GameObject:
   m_ObjectHideFlags: 0
@@ -38639,6 +38600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 12
 --- !u!114 &1773140746
 MonoBehaviour:
@@ -39542,6 +39505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 10
 --- !u!114 &1815258451
 MonoBehaviour:
@@ -39757,19 +39722,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1826490954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1826490954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39821,7 +39774,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 0
+  category: UpperBody
 --- !u!1 &1827922954
 GameObject:
   m_ObjectHideFlags: 0
@@ -41017,6 +40972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 0
 --- !u!1 &1882222775
 GameObject:
@@ -42171,6 +42128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 8
 --- !u!114 &1970925983
 MonoBehaviour:
@@ -42751,6 +42710,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 2
 --- !u!114 &1990394857
 MonoBehaviour:
@@ -43041,19 +43002,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1993670125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1993670125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43105,7 +43054,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelUpperBodyController: {fileID: 6794448444682791724}
+  _progressionBar: {fileID: 361877230}
   upperBodyIndex: 9
+  category: UpperBody
 --- !u!1 &1999347179
 GameObject:
   m_ObjectHideFlags: 0
@@ -43636,6 +43587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelHairController: {fileID: 6794448444682791723}
+  _progressionBar: {fileID: 361877230}
+  category: hair
   hairIndex: 3
 --- !u!1 &2019216313
 GameObject:
@@ -44256,6 +44209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelLowerBodyController: {fileID: 6794448444682791727}
+  _progressionBar: {fileID: 361877230}
+  category: lower body
   lowerBodyIndex: 10
 --- !u!114 &2050833991
 MonoBehaviour:
@@ -44521,6 +44476,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelSocksController: {fileID: 6794448444682791725}
+  category: socks
+  _progressionBar: {fileID: 361877230}
   shoesIndex: 1
 --- !u!114 &2060495510
 MonoBehaviour:
@@ -44688,6 +44645,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelAccesoryController: {fileID: 6794448444682791728}
+  _progressionBar: {fileID: 361877230}
+  category: accesory
   accesoryIndex: 1
 --- !u!114 &2061499970
 MonoBehaviour:
@@ -46424,6 +46383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 10
 --- !u!114 &2138260796
 MonoBehaviour:
@@ -46722,6 +46683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelShoesController: {fileID: 6794448444682791726}
+  _progressionBar: {fileID: 361877230}
+  category: shoes
   shoesIndex: 7
 --- !u!114 &2142861294
 MonoBehaviour:

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ShoesButtonController : MonoBehaviour
 {
     [SerializeField] private ModelShoesController _modelShoesController;
+    [SerializeField] private GameObject _progressionBar;
+    public string category;
     public int shoesIndex;
 
     private void Start()
@@ -20,5 +22,7 @@ public class ShoesButtonController : MonoBehaviour
     private void OnClickButton()
     {
         _modelShoesController.ChangeShoesModel(shoesIndex);
+        _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
+        _progressionBar.GetComponent<CompletionBar>().FillTheBar();
     }
 }

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class HairButtonController : MonoBehaviour
 {
     [SerializeField] private ModelHairController _modelHairController;
+    [SerializeField] private GameObject _progressionBar;
+    public string category;
     public int hairIndex;
 
     private void Start()
@@ -21,5 +23,7 @@ public class HairButtonController : MonoBehaviour
     private void OnClickButton()
     {
         _modelHairController.ChangeHairModel(hairIndex);
+        _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
+        _progressionBar.GetComponent<CompletionBar>().FillTheBar();
     }
 }

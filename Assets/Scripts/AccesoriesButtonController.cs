@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class AccesoriesButtonController : MonoBehaviour
 {
     [SerializeField] private ModelAccesoryController _modelAccesoryController;
+    [SerializeField] private GameObject _progressionBar;
+    public string category;
     public int accesoryIndex;
 
     private void Start()
@@ -20,6 +22,8 @@ public class AccesoriesButtonController : MonoBehaviour
     private void OnClickButton()
     {
         _modelAccesoryController.ChangeAccesoryModel(accesoryIndex);
+        _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
+        _progressionBar.GetComponent<CompletionBar>().FillTheBar();
     }
 }
 

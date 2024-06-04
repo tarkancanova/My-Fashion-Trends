@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class UpperBodyButtonController : MonoBehaviour
 {
     [SerializeField] private ModelUpperBodyController _modelUpperBodyController;
+    [SerializeField] private GameObject _progressionBar;
     public int upperBodyIndex;
+    public string category;
 
     private void Start()
     {
@@ -21,5 +23,7 @@ public class UpperBodyButtonController : MonoBehaviour
     private void OnClickButton()
     {
         _modelUpperBodyController.ChangeUpperBodyModel(upperBodyIndex);
+        _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
+        _progressionBar.GetComponent<CompletionBar>().FillTheBar();
     }
 }
