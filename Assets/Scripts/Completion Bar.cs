@@ -26,7 +26,6 @@ public class CompletionBar : MonoBehaviour
     private void Update()
     {
         ActivateContinueButton();
-        Debug.Log(clickedCategory + " " + lastClickedCategory);
     }
 
     public void FillTheBar()

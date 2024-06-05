@@ -10,6 +10,8 @@ public class HairButtonController : MonoBehaviour
     [SerializeField] private GameObject _progressionBar;
     public string category;
     public int hairIndex;
+    [SerializeField] private GameObject _levelBar;
+    [SerializeField] private LevelData _levelData;
 
     private void Start()
     {
@@ -25,5 +27,6 @@ public class HairButtonController : MonoBehaviour
         _modelHairController.ChangeHairModel(hairIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
+        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
     }
 }

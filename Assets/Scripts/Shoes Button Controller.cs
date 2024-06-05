@@ -9,6 +9,8 @@ public class ShoesButtonController : MonoBehaviour
     [SerializeField] private GameObject _progressionBar;
     public string category;
     public int shoesIndex;
+    [SerializeField] private GameObject _levelBar;
+    [SerializeField] private LevelData _levelData;
 
     private void Start()
     {
@@ -24,5 +26,6 @@ public class ShoesButtonController : MonoBehaviour
         _modelShoesController.ChangeShoesModel(shoesIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
+        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
     }
 }

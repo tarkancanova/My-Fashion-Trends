@@ -9,6 +9,8 @@ public class LowerBodyButtonController : MonoBehaviour
     [SerializeField] private GameObject _progressionBar;
     public string category;
     public int lowerBodyIndex;
+    [SerializeField] private GameObject _levelBar;
+    [SerializeField] private LevelData _levelData;
 
     private void Start()
     {
@@ -24,5 +26,6 @@ public class LowerBodyButtonController : MonoBehaviour
         _modelLowerBodyController.ChangeLowerBodyModel(lowerBodyIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
+        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
     }
 }

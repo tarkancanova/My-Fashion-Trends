@@ -9,6 +9,8 @@ public class AccesoriesButtonController : MonoBehaviour
     [SerializeField] private GameObject _progressionBar;
     public string category;
     public int accesoryIndex;
+    [SerializeField] private GameObject _levelBar;
+    [SerializeField] private LevelData _levelData;
 
     private void Start()
     {
@@ -24,6 +26,7 @@ public class AccesoriesButtonController : MonoBehaviour
         _modelAccesoryController.ChangeAccesoryModel(accesoryIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
+        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
     }
 }
 
