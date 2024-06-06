@@ -11,13 +11,16 @@ public class SocksButtonController : MonoBehaviour
     public int shoesIndex;
     [SerializeField] private GameObject _levelBar;
     [SerializeField] private LevelData _levelData;
+    private Button _button;
+    [SerializeField] private BackgroundManager _backgroundManager;
+    [SerializeField] private ButtonListener _buttonListener;
 
-    private void Start()
+    private void OnEnable()
     {
-        Button button = GetComponent<Button>();
-        if (button != null)
+        _button = GetComponent<Button>();
+        if (_button != null)
         {
-            button.onClick.AddListener(OnClickButton);
+            _button.onClick.AddListener(OnClickButton);
         }
     }
 
@@ -26,6 +29,9 @@ public class SocksButtonController : MonoBehaviour
         _modelSocksController.ChangeSocksModel(shoesIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
-        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
+        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick);
     }
+
+
+
 }

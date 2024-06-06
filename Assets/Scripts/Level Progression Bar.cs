@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,16 +13,16 @@ public class LevelProgressionBar : MonoBehaviour
     private Slider _slider;
     [SerializeField] private GameObject _completionBar;
     private Slider _completionSlider;
-
+    [SerializeField] private float smoothDuration = 0.5f; 
 
     private void Awake()
     {
         _level = _levelData.level;
         _currentXP = _levelData.playerXP;
-        _neededXPForLevelUp = _level; // Set _neededXPForLevelUp here
+        _neededXPForLevelUp = _level; 
         _slider = this.GetComponent<Slider>();
         _completionSlider = _completionBar.GetComponent<Slider>();
-        FillTheBar();
+        FillTheBarInstantly(); 
     }
 
     private void Update()
@@ -46,9 +45,29 @@ public class LevelProgressionBar : MonoBehaviour
 
     private void FillTheBar()
     {
+        float targetValue = (float)_currentXP / (float)_neededXPForLevelUp;
+        StartCoroutine(SmoothFill(targetValue));
+    }
+
+    private void FillTheBarInstantly()
+    {
         _slider.value = (float)_currentXP / (float)_neededXPForLevelUp;
     }
 
+    private IEnumerator SmoothFill(float targetValue)
+    {
+        float startValue = _slider.value;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < smoothDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            _slider.value = Mathf.Lerp(startValue, targetValue, elapsedTime / smoothDuration);
+            yield return null;
+        }
+
+        _slider.value = targetValue;
+    }
     private void LevelUp()
     {
         if (_currentXP == _neededXPForLevelUp)

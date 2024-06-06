@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,13 +12,17 @@ public class LowerBodyButtonController : MonoBehaviour
     public int lowerBodyIndex;
     [SerializeField] private GameObject _levelBar;
     [SerializeField] private LevelData _levelData;
+    private Button _button;
+    [SerializeField] private BackgroundManager _backgroundManager;
+    [SerializeField] private ButtonListener _buttonListener;
 
-    private void Start()
+    private void OnEnable()
     {
-        Button button = GetComponent<Button>();
-        if (button != null)
+        
+        _button = GetComponent<Button>();
+        if (_button != null)
         {
-            button.onClick.AddListener(OnClickButton);
+            _button.onClick.AddListener(OnClickButton);
         }
     }
 
@@ -26,6 +31,9 @@ public class LowerBodyButtonController : MonoBehaviour
         _modelLowerBodyController.ChangeLowerBodyModel(lowerBodyIndex);
         _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
         _progressionBar.GetComponent<CompletionBar>().FillTheBar();
-        _levelBar.GetComponent<LevelProgressionBar>().UpdateXP();
+        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick);
+
+
     }
+
 }

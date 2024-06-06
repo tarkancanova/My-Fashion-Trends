@@ -23,6 +23,7 @@ public class NextLevelButton : MonoBehaviour
         DeactivateAllChildren(_clothesObject.transform);
         DeactivateAllChildren(_hairObject.transform);
         DeactivateAllChildren(_accObject.transform);
+        PlayerPrefs.DeleteKey("Background");
     }
 
     public void DeactivateAllChildren(Transform parent)

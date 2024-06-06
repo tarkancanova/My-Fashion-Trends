@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7afc6f7b850a24fba3568511f3f8e7, type: 3}
   m_Name: New Level Data
   m_EditorClassIdentifier: 
-  level: 10
-  playerXP: 5
+  level: 1
+  playerXP: 0

@@ -6,21 +6,17 @@ using DG.Tweening;
 
 public class CompletionBar : MonoBehaviour
 {
-    private Image _image;
-    private float _currentProgression;
-    private float _maxProgression = 100;
-    private float _progressAmountPerChange = 5;
-    [SerializeField] private float _fillSpeed;
+    [SerializeField] private float _fillSpeed = 0.5f; // Default fill speed
     [SerializeField] private GameObject _continueButton;
     private string lastClickedCategory;
     public string clickedCategory;
 
+    private Slider _slider;
+
     private void Awake()
     {
-        _image = GetComponent<Image>();
-        _currentProgression = 0;
+        _slider = GetComponent<Slider>();
         lastClickedCategory = "Initial value";
-        
     }
 
     private void Update()
@@ -33,7 +29,8 @@ public class CompletionBar : MonoBehaviour
         if (clickedCategory == lastClickedCategory) return;
         else
         {
-            this.GetComponent<Slider>().value += 0.05f;
+            float targetValue = _slider.value + 0.1f;
+            _slider.DOValue(targetValue, _fillSpeed).SetEase(Ease.InOutQuad);
             AssignLastClickedCategory();
         }
     }
@@ -48,14 +45,15 @@ public class CompletionBar : MonoBehaviour
         lastClickedCategory = clickedCategory;
     }
 
-
     private void ActivateContinueButton()
     {
-        if (this.GetComponent<Slider>().value >= 1)
+        if (_slider.value >= 1)
         {
             _continueButton.SetActive(true);
         }
         else
+        {
             _continueButton.SetActive(false);
+        }
     }
 }
