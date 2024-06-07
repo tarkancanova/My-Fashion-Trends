@@ -10,6 +10,7 @@ public class CompletionBar : MonoBehaviour
     [SerializeField] private GameObject _continueButton;
     private string lastClickedCategory;
     public string clickedCategory;
+    [SerializeField] private GameObject _heartParticle;
 
     private Slider _slider;
 
@@ -19,10 +20,6 @@ public class CompletionBar : MonoBehaviour
         lastClickedCategory = "Initial value";
     }
 
-    private void Update()
-    {
-        ActivateContinueButton();
-    }
 
     public void FillTheBar()
     {
@@ -45,11 +42,12 @@ public class CompletionBar : MonoBehaviour
         lastClickedCategory = clickedCategory;
     }
 
-    private void ActivateContinueButton()
+    public void ActivateContinueButton()
     {
-        if (_slider.value >= 1)
+        if (_slider.value == 1)
         {
             _continueButton.SetActive(true);
+            _heartParticle.GetComponent<ParticleSystem>().Play();
         }
         else
         {

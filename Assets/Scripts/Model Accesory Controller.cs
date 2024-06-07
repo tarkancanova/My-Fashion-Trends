@@ -9,6 +9,8 @@ public class ModelAccesoryController : MonoBehaviour
 
     private GameObject[] _accesoryModels;
 
+    //This script decides which accesory object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeAccesoryModels();

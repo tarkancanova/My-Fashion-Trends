@@ -10,6 +10,8 @@ public class ModelLowerBodyController : MonoBehaviour
 
     private GameObject[] _lowerBodyModels;
 
+    //This script decides which lowerbody object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeLowerBodyModels();

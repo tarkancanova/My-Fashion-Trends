@@ -14,6 +14,9 @@ public class NextLevelButton : MonoBehaviour
     [SerializeField] private GameObject _hairObject;
     [SerializeField] private GameObject _accObject;
 
+    //This script takes player back to background selection screen.
+    //DeactivateAllChildren deactivates the children of given parent object and used in this script to deactivate dress, accesory and hair models.
+
     public void OnNextLevelButtonClick()
     {
         _levelCompletedObject.SetActive(false);

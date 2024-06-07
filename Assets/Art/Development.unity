@@ -9658,19 +9658,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459200260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &459200260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10028,19 +10016,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 469690434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &469690434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12565,19 +12541,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 584246772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &584246772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22618,19 +22582,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1061404006}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1061404006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25557,19 +25509,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1173269529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1173269529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31097,19 +31037,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1401617991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1401617991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35372,19 +35300,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1555573864}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1555573864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37742,19 +37658,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1633414261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1633414261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38614,19 +38518,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1684800861}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1684800861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38820,19 +38712,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1692603136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1692603136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44328,19 +44208,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1875050272}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1875050272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47466,19 +47334,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2017545102}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361877233}
-        m_TargetAssemblyTypeName: CompletionBar, Assembly-CSharp
-        m_MethodName: FillTheBar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2017545102
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class ModelShoesController : MonoBehaviour
 
     private GameObject[] _shoesModels;
 
+    //This script decides which shoes object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeShoeModels();

@@ -13,16 +13,18 @@ public class LevelProgressionBar : MonoBehaviour
     private Slider _slider;
     [SerializeField] private GameObject _completionBar;
     private Slider _completionSlider;
-    [SerializeField] private float smoothDuration = 0.5f; 
+    [SerializeField] private float smoothDuration = 0.5f;
+
+    private Coroutine _smoothFillCoroutine;
 
     private void Awake()
     {
         _level = _levelData.level;
         _currentXP = _levelData.playerXP;
-        _neededXPForLevelUp = _level; 
+        _neededXPForLevelUp = _level;
         _slider = this.GetComponent<Slider>();
         _completionSlider = _completionBar.GetComponent<Slider>();
-        FillTheBarInstantly(); 
+        FillTheBarInstantly();
     }
 
     private void Update()
@@ -31,30 +33,41 @@ public class LevelProgressionBar : MonoBehaviour
         _levelData.level = _level;
         _levelData.playerXP = _currentXP;
         _levelText.text = "Level: " + _levelData.level;
-        LevelUp();
-        Debug.Log(_neededXPForLevelUp + " " + _currentXP);
+
+        Debug.Log(_slider.value);
     }
 
-    public void UpdateXP()
+    public void UpdateXP() //updates XP if progression bar is not full.
     {
         if (_completionSlider.value == 1) return;
 
         _currentXP += 1;
         FillTheBar();
+
+        if (_currentXP >= _neededXPForLevelUp)
+        {
+            LevelUp();
+        }
     }
 
-    private void FillTheBar()
+    private void FillTheBar() //Fills the bar, if coroutine is still running stops it to prevent bugs on smooth filling.
     {
         float targetValue = (float)_currentXP / (float)_neededXPForLevelUp;
-        StartCoroutine(SmoothFill(targetValue));
+
+        if (_smoothFillCoroutine != null)
+        {
+            StopCoroutine(_smoothFillCoroutine);
+        }
+
+        _smoothFillCoroutine = StartCoroutine(SmoothFill(targetValue));
     }
 
-    private void FillTheBarInstantly()
+    private void FillTheBarInstantly() //Changes the slider value based on the ratio of current XP to needed XP.
     {
         _slider.value = (float)_currentXP / (float)_neededXPForLevelUp;
     }
 
-    private IEnumerator SmoothFill(float targetValue)
+    private IEnumerator SmoothFill(float targetValue) //Makes the filling of bar smoother.
     {
         float startValue = _slider.value;
         float elapsedTime = 0f;
@@ -68,13 +81,17 @@ public class LevelProgressionBar : MonoBehaviour
 
         _slider.value = targetValue;
     }
-    private void LevelUp()
+
+    public void LevelUp() //Level up logic sent to buttons as a listener.
     {
-        if (_currentXP == _neededXPForLevelUp)
+        if (_currentXP >= _neededXPForLevelUp)
         {
             _level += 1;
             _currentXP = 0;
             _slider.value = 0;
+            // Update the needed XP for the next level up if needed
+            _neededXPForLevelUp = _level;
+            FillTheBarInstantly();
         }
     }
 }

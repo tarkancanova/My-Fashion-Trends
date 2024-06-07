@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 
 public class HairButtonController : MonoBehaviour
@@ -15,8 +16,11 @@ public class HairButtonController : MonoBehaviour
     private Button _button;
     [SerializeField] private BackgroundManager _backgroundManager;
     [SerializeField] private ButtonListener _buttonListener;
+    [SerializeField] private GameObject _shineParticle;
+    private Coroutine _particleEffect;
 
 
+    //This script assigns buttons for hair category.
     private void OnEnable()
     {
         _button = GetComponent<Button>();
@@ -26,11 +30,32 @@ public class HairButtonController : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        if (_button != null)
+        {
+            _button.onClick.RemoveListener(OnClickButton);
+        }
+    }
+
     private void OnClickButton()
     {
+        ParticleEffect();
         _modelHairController.ChangeHairModel(hairIndex);
-        _progressionBar.GetComponent<CompletionBar>().AssignClickedCategory(category);
-        _progressionBar.GetComponent<CompletionBar>().FillTheBar();
-        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick);
+        CompletionBar completionBar = _progressionBar.GetComponent<CompletionBar>();
+        LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
+
+        completionBar.AssignClickedCategory(category); //Assigns a category for the p. bar's progression block.
+        completionBar.FillTheBar(); //P. bar progression.
+        completionBar.ActivateContinueButton();
+        levelProgressionBar.LevelUp(); //Level bar progression.
+        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
+    }
+
+    private void ParticleEffect()
+    {
+        _shineParticle.GetComponent<ParticleSystem>().Stop();
+        _shineParticle.GetComponent<ParticleSystem>().Clear();
+        _shineParticle.GetComponent<ParticleSystem>().Play();
     }
 }

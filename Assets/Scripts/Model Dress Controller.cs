@@ -11,6 +11,8 @@ public class ModelDressController : MonoBehaviour
 
     private GameObject[] _dressModels;
 
+    //This script decides which dress object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeDressModels();

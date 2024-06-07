@@ -10,6 +10,8 @@ public class ModelUpperBodyController : MonoBehaviour
 
     private GameObject[] _upperBodyModels;
 
+    //This script decides which upperbody object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeUpperBodyModels();

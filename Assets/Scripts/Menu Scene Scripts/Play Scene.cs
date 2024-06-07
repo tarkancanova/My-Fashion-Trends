@@ -6,7 +6,7 @@ public class PlayScene : MonoBehaviour
 {
     [SerializeField] private GameObject _playScene;
     [SerializeField] private GameObject _backgroundSelectionScene;
-    [SerializeField] private GameObject _inGameUI;
+    [SerializeField] private GameObject _messageScreen;
     [SerializeField] private GameObject _backgroundsObject;
 
 
@@ -22,7 +22,7 @@ public class PlayScene : MonoBehaviour
         {
             Debug.Log(PlayerPrefs.HasKey("Background"));
             _playScene.SetActive(false);
-            _inGameUI.SetActive(true);
+            _messageScreen.SetActive(true);
             _backgroundsObject.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
         }
             

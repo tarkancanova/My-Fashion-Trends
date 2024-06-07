@@ -12,6 +12,8 @@ public class SaveData : MonoBehaviour
     private const string PLAYERPREFS_PROGRESSION = "Progression";
     private const string BACKGROUND_SELECTION = "Background";
 
+    //In OnEnable, sets the data from playerprefs to scriptableobject. In OnDisable, sets the data from scriptableobject to playerprefs.
+
 
     private void OnEnable()
     {
@@ -22,7 +24,6 @@ public class SaveData : MonoBehaviour
         if (PlayerPrefs.HasKey(PLAYERPREFS_PROGRESSION)) _progressionData.playerProgression = PlayerPrefs.GetInt(PLAYERPREFS_PROGRESSION, _progressionData.playerProgression);
         else _progressionData.playerProgression = 1;
 
-        Debug.Log(PlayerPrefs.GetInt(PLAYERPREFS_LEVEL, _levelData.level) + PlayerPrefs.GetInt(PLAYERPREFS_XP, _levelData.playerXP) + PlayerPrefs.GetInt(PLAYERPREFS_PROGRESSION, _progressionData.playerProgression));
     }
 
     private void OnDisable()

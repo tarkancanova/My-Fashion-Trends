@@ -10,6 +10,9 @@ public class ModelHairController : MonoBehaviour
 
     private GameObject[] _hairModels;
 
+    //This script decides which hair object will be set active based on the index it gets from buttons.
+
+
     private void Awake()
     {
         InitializeHairModels();

@@ -13,6 +13,8 @@ public class HorizontalSnapScrollRect : MonoBehaviour
     private bool isSnapping = false;
     private Vector2 velocity = Vector2.zero;
 
+    //Provides smoot transition between the pages of dress UI. HARDCODED COORDINATES INCLUDED IN EDITOR!
+
     private void Update()
     {
 

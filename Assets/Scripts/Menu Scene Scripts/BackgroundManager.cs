@@ -6,12 +6,14 @@ public class BackgroundManager : MonoBehaviour
 {
     [SerializeField] private GameObject _backgroundSelectionUI;
     [SerializeField] private GameObject _backgroundsObject;
-    [SerializeField] private GameObject _inGameUI;
+    [SerializeField] private GameObject _messageScreen;
     [SerializeField] private ProgressionData _progData;
     public List<Button> buttons = new List<Button>();
     [SerializeField] private ButtonListener _buttonListener;
     [SerializeField] private GameObject _gameScene;
     [SerializeField] private GameObject _interfacesObject;
+
+    //assigns variables to background buttons and makes the background selection possible.
 
     private void Awake()
     {
@@ -35,7 +37,8 @@ public class BackgroundManager : MonoBehaviour
 
     }
 
-    public void OnClickButton(int backgroundIndex)
+    public void OnClickButton(int backgroundIndex) //first, checks the player progression to determine which backgrounds can be selected then sets the data for playerprefs,
+                                                   //deactivates background selection screen and all the backgrounds, and activates the selected background. Finally, sets the in game UI active.
     {
 
         if (_progData.playerProgression < backgroundIndex) return;
@@ -60,7 +63,7 @@ public class BackgroundManager : MonoBehaviour
         }
 
 
-        _inGameUI.SetActive(true);
+        _messageScreen.SetActive(true);
 
     }
 }

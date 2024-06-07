@@ -1,17 +1,3 @@
-//using UnityEngine;
-
-//public class ScreenshotManager : MonoBehaviour
-//{
-//    public void TakeScreenshot()
-//    {
-//        string screenshotFilename = "Screenshot_" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
-
-//        ScreenCapture.CaptureScreenshot(Application.persistentDataPath + "/" + screenshotFilename);
-
-//        Debug.Log("Screenshot saved: " + screenshotFilename);
-//    }
-//}
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,15 +6,18 @@ public class ScreenshotManager : MonoBehaviour
 {
     public RawImage displayImage; // UI RawImage element for displaying the screenshot
     public float delay = 0.5f; // Adjustable delay for screenshot capturing
+    [SerializeField] private GameObject _flashEffect;
 
     public void TakeScreenshot()
     {
         StartCoroutine(CaptureScreenshot());
     }
 
-    IEnumerator CaptureScreenshot()
+    IEnumerator CaptureScreenshot() //Takes the screenshot and displays it.
     {
         yield return new WaitForEndOfFrame();
+
+        _flashEffect.GetComponent<ParticleSystem>().Play();
 
         // Create a Texture2D with screen width and height
         Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);

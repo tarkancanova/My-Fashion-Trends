@@ -9,6 +9,8 @@ public class ModelSocksController : MonoBehaviour
 
     private GameObject[] _socksModels;
 
+    //This script decides which socks object will be set active based on the index it gets from buttons.
+
     private void Awake()
     {
         InitializeSocksModels();
