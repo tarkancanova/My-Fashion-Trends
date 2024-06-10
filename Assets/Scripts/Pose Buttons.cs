@@ -38,7 +38,7 @@ public class PoseButtons : MonoBehaviour
         _animator.SetInteger("Pose", poseIndex);
     }
 
-    private void SetPoseIndexInAnimatorToZero()
+    public void SetPoseIndexInAnimatorToZero()
     {
         _animator.SetInteger("Pose", 0);
     }
