@@ -33,8 +33,6 @@ public class LevelProgressionBar : MonoBehaviour
         _levelData.level = _level;
         _levelData.playerXP = _currentXP;
         _levelText.text = "Level: " + _levelData.level;
-
-        Debug.Log(_slider.value);
     }
 
     public void UpdateXP() //updates XP if progression bar is not full.
@@ -88,10 +86,11 @@ public class LevelProgressionBar : MonoBehaviour
         {
             _level += 1;
             _currentXP = 0;
-            _slider.value = 0;
-            // Update the needed XP for the next level up if needed
+            _smoothFillCoroutine = null;
+            Debug.Log(_currentXP);
             _neededXPForLevelUp = _level;
             FillTheBarInstantly();
+            _slider.value = 0;
         }
     }
 }

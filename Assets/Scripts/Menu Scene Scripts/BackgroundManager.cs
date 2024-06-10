@@ -6,7 +6,7 @@ public class BackgroundManager : MonoBehaviour
 {
     [SerializeField] private GameObject _backgroundSelectionUI;
     [SerializeField] private GameObject _backgroundsObject;
-    [SerializeField] private GameObject _messageScreen;
+    [SerializeField] private GameObject _messageScreens;
     [SerializeField] private ProgressionData _progData;
     public List<Button> buttons = new List<Button>();
     [SerializeField] private ButtonListener _buttonListener;
@@ -62,8 +62,8 @@ public class BackgroundManager : MonoBehaviour
             button.onClick.AddListener(_buttonListener.LevelProgressionOnClick);
         }
 
-
-        _messageScreen.SetActive(true);
+        _messageScreens.SetActive(true);
+        _messageScreens.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
 
     }
 }

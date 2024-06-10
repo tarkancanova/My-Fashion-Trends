@@ -23,12 +23,6 @@ public class NextLevelButton : MonoBehaviour
         _backgroundSelectionObject.SetActive(true);
         _progData.playerProgression += 1;
         _progressionBar.GetComponent<Slider>().value = 0;
-        for (int i = 0; i < _clothesObject.transform.childCount; i++)
-        {
-            DeactivateAllChildren(_clothesObject.transform.GetChild(i));
-        }
-        DeactivateAllChildren(_hairObject.transform);
-        DeactivateAllChildren(_accObject.transform);
         PlayerPrefs.DeleteKey("Background");
     }
 
