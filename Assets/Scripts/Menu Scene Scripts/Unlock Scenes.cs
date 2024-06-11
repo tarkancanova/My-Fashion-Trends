@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class UnlockScenes : MonoBehaviour
+public class UnlockScenes : Singleton<UnlockScenes>
 {
     [SerializeField] private GameObject _content;
     [SerializeField] private ProgressionData _progressionData;
@@ -12,17 +10,19 @@ public class UnlockScenes : MonoBehaviour
         UnlockScene();
     }
 
-    private void UnlockScene()
+    public void UnlockScene()
     {
         if (_progressionData.playerProgression == 0)
         {
-            return;
+            Debug.Log("here");
+            _content.transform.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
+            _content.transform.GetChild(1).GetChild(0).GetChild(1).gameObject.SetActive(true);
         }
+
         else if (_progressionData.playerProgression == 1)
         {
-            Debug.Log("here");
-            _content.transform.GetChild(1).GetChild(0).GetChild(1).gameObject.SetActive(false);
             _content.transform.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
+            _content.transform.GetChild(1).GetChild(0).GetChild(1).gameObject.SetActive(false);
         }
         else
         {

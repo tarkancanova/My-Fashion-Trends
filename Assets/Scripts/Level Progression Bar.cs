@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class LevelProgressionBar : MonoBehaviour
 {
-    [SerializeField] private LevelData _levelData;
+    [SerializeField] public LevelData _levelData;
     private int _currentXP;
-    private int _level;
+    public int _level;
     private int _neededXPForLevelUp;
     public TMP_Text _levelText;
     private Slider _slider;
@@ -30,7 +30,7 @@ public class LevelProgressionBar : MonoBehaviour
     private void Update()
     {
         _neededXPForLevelUp = _level;
-        _levelData.level = _level;
+        //_levelData.level = _level;
         _levelData.playerXP = _currentXP;
         _levelText.text = "Level: " + _levelData.level;
     }
@@ -40,11 +40,13 @@ public class LevelProgressionBar : MonoBehaviour
         if (_completionSlider.value == 1) return;
 
         _currentXP += 1;
+        _levelData.playerXP = _currentXP;
         FillTheBar();
 
         if (_currentXP >= _neededXPForLevelUp)
         {
             LevelUp();
+            SaveData.Instance.Save();
         }
     }
 
@@ -85,7 +87,9 @@ public class LevelProgressionBar : MonoBehaviour
         if (_currentXP >= _neededXPForLevelUp)
         {
             _level += 1;
+            _levelData.level = _level;
             _currentXP = 0;
+            _levelData.playerXP = _currentXP;
             _smoothFillCoroutine = null;
             Debug.Log(_currentXP);
             _neededXPForLevelUp = _level;

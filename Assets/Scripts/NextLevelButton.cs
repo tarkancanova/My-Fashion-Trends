@@ -24,6 +24,8 @@ public class NextLevelButton : MonoBehaviour
         _progData.playerProgression += 1;
         _progressionBar.GetComponent<Slider>().value = 0;
         PlayerPrefs.DeleteKey("Background");
+        SaveData.Instance.Save();
+        UnlockScenes.Instance.UnlockScene();
     }
 
     public void DeactivateAllChildren(Transform parent)

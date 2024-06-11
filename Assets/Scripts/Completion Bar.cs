@@ -26,7 +26,7 @@ public class CompletionBar : MonoBehaviour
         if (clickedCategory == lastClickedCategory) return;
         else
         {
-            float targetValue = _slider.value + 0.1f;
+            float targetValue = _slider.value + 0.3f;
             _slider.DOValue(targetValue, _fillSpeed).SetEase(Ease.InOutQuad);
             AssignLastClickedCategory();
         }
