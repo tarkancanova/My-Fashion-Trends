@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayScene : MonoBehaviour
 {
     [SerializeField] private GameObject _playScene;
     [SerializeField] private GameObject _backgroundSelectionScene;
-    [SerializeField] private GameObject _messageScreens;
-    [SerializeField] private GameObject _backgroundsObject;
+    //[SerializeField] private GameObject _messageScreens;
+    //[SerializeField] private GameObject _backgroundsObject;
 
 
     public void OnPlayButtonClick()
@@ -22,11 +20,11 @@ public class PlayScene : MonoBehaviour
         {
             Debug.Log(PlayerPrefs.HasKey("Background"));
             _playScene.SetActive(false);
-            _messageScreens.SetActive(true);
-            _messageScreens.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
-            _backgroundsObject.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
+            _backgroundSelectionScene.SetActive(true);
+            //_messageScreens.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
+            //_backgroundsObject.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
         }
-            
-         
+
+
     }
 }
