@@ -9,6 +9,18 @@ public class PoseButtons : MonoBehaviour
     [SerializeField] private int poseIndex;
     [SerializeField] public Animator _animator;
 
+    public static PoseButtons Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
 
     private void OnEnable()
     {
@@ -35,6 +47,12 @@ public class PoseButtons : MonoBehaviour
     public void OnClickButton()
     {
         //PoseZero.SetPoseIndexInAnimatorToZero();
+        _animator.SetInteger("Pose", poseIndex);
+    }
+
+    public void SetPoseIndex(int index)
+    {
+        poseIndex = index;
         _animator.SetInteger("Pose", poseIndex);
     }
 

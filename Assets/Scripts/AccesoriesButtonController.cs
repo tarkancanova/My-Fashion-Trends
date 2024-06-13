@@ -41,12 +41,12 @@ public class AccesoriesButtonController : MonoBehaviour
         ParticleEffect();
         _modelAccesoryController.ChangeAccesoryModel(accesoryIndex);
         CompletionBar completionBar = _progressionBar.GetComponent<CompletionBar>();
-        LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
+        //LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
 
         completionBar.AssignClickedCategory(category); //Assigns a category for the p. bar's progression block.
         completionBar.FillTheBar(); //P. bar progression.
         completionBar.ActivateContinueButton();
-        levelProgressionBar.LevelUp(); //Level bar progression.
+        //levelProgressionBar.LevelUp(); //Level bar progression.
         _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
     }
     private void ParticleEffect()

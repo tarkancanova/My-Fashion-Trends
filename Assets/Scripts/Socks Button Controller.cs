@@ -43,11 +43,11 @@ public class SocksButtonController : MonoBehaviour
         ParticleEffect();
         _modelSocksController.ChangeSocksModel(shoesIndex);
         CompletionBar completionBar = _progressionBar.GetComponent<CompletionBar>();
-        LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
+        //LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
 
         completionBar.AssignClickedCategory(category); //Assigns a category for the p. bar's progression block.
         completionBar.FillTheBar(); //P. bar progression.
-        levelProgressionBar.LevelUp(); //Level bar progression.
+        //levelProgressionBar.LevelUp(); //Level bar progression.
         completionBar.ActivateContinueButton();
         _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
     }

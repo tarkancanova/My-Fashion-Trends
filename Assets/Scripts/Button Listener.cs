@@ -10,8 +10,8 @@ public class ButtonListener : MonoBehaviour
 
     public void LevelProgressionOnClick()
     {
-        LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
+        //LevelProgressionBar levelProgressionBar = _levelBar.GetComponent<LevelProgressionBar>();
 
-        levelProgressionBar.UpdateXP();
+        //levelProgressionBar.UpdateXP();
     }
 }
