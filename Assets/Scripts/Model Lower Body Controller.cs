@@ -6,7 +6,8 @@ using UnityEngine;
 public class ModelLowerBodyController : MonoBehaviour
 {
     [SerializeField] private GameObject _lowerBodyModelsObject;
-    private int _currentLowerBodyIndex = 0;
+    [SerializeField] public ModelSocksController _modelSocksController;
+    public int _currentLowerBodyIndex = 0;
 
     private GameObject[] _lowerBodyModels;
 
@@ -35,7 +36,15 @@ public class ModelLowerBodyController : MonoBehaviour
 
         _currentLowerBodyIndex = newIndex;
 
-        
+        for (int i = 11; i >= 6; i--)
+        {
+           if(_currentLowerBodyIndex == i)
+            {
+                _modelSocksController.ChangeSocksModel(7);
+            }
+        }
+
+
     }
 
     public void RemoveAllLowerBody()

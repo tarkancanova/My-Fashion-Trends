@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
 public class ModelHairController : MonoBehaviour
 {
     [SerializeField] private GameObject _hairModelsObject;
+    [SerializeField] public ModelAccesoryController _modelAccesoryController;
     private int _currentHairIndex = 0;
 
     private GameObject[] _hairModels;
@@ -34,5 +32,20 @@ public class ModelHairController : MonoBehaviour
         _hairModels[newIndex].SetActive(true);
 
         _currentHairIndex = newIndex;
+
+
+        for(int i = 4; i >= 0; i--)
+        {
+            if (i == _modelAccesoryController._currentAccesoryIndex && _currentHairIndex < 12)
+            {
+                _modelAccesoryController.ChangeAccesoryModel(16);
+            }
+        }
+
+        if(_modelAccesoryController._currentAccesoryIndex == 10 && _currentHairIndex < 12 || _modelAccesoryController._currentAccesoryIndex == 9 && _currentHairIndex < 12)
+        {
+            _modelAccesoryController.ChangeAccesoryModel(16);
+        }
+
     }
 }

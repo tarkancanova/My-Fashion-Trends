@@ -5,9 +5,11 @@ using UnityEngine;
 public class ModelAccesoryController : MonoBehaviour
 {
     [SerializeField] private GameObject _accesoryModelsObject;
-    private int _currentAccesoryIndex = 0;
+    [SerializeField] public ModelHairController _hairModels;
+    public int _currentAccesoryIndex = 0;
+    public bool _accesoryChanged;
 
-    private GameObject[] _accesoryModels;
+    public GameObject[] _accesoryModels;
 
     //This script decides which accesory object will be set active based on the index it gets from buttons.
 
@@ -33,5 +35,18 @@ public class ModelAccesoryController : MonoBehaviour
         _accesoryModels[newIndex].SetActive(true);
 
         _currentAccesoryIndex = newIndex;
+
+        for (int i = 4; i >= 0; i--)
+        {
+            if (i == newIndex)
+            {
+                _hairModels.ChangeHairModel(12);
+            }
+        }
+
+        if(newIndex == 9 || newIndex == 10)
+        {
+            _hairModels.ChangeHairModel(12);
+        }
     }
 }

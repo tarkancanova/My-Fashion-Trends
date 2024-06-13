@@ -55,6 +55,7 @@ public class BackgroundManager : MonoBehaviour
         if (backgroundIndex >= 0 && backgroundIndex < _backgroundsObject.transform.childCount)
         {
             _backgroundsObject.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
+            ConceptNames.Instance.SetConceptNames(backgroundIndex);
         }
 
         foreach(Button button in buttons)

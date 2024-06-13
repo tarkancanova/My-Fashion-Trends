@@ -5,6 +5,7 @@ using UnityEngine;
 public class ModelSocksController : MonoBehaviour
 {
     [SerializeField] private GameObject _socksModelsObject;
+    [SerializeField] public ModelLowerBodyController _modelLowerBodyController;
     private int _currentSocksIndex = 0;
 
     private GameObject[] _socksModels;
@@ -32,5 +33,13 @@ public class ModelSocksController : MonoBehaviour
         _socksModels[newIndex].SetActive(true);
 
         _currentSocksIndex = newIndex;
+
+        for (int i = 11; i >= 6; i--)
+        {
+            if (_modelLowerBodyController._currentLowerBodyIndex == i && _currentSocksIndex < 6)
+            {
+               _modelLowerBodyController.ChangeLowerBodyModel(15);
+            }
+        }
     }
 }

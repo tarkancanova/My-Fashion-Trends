@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PoseButtons : MonoBehaviour
 {
     private Button _button;
-    public int poseIndex;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private int poseIndex;
+    [SerializeField] public Animator _animator;
 
 
     private void OnEnable()
@@ -34,12 +34,12 @@ public class PoseButtons : MonoBehaviour
 
     public void OnClickButton()
     {
-        SetPoseIndexInAnimatorToZero();
+        //PoseZero.SetPoseIndexInAnimatorToZero();
         _animator.SetInteger("Pose", poseIndex);
     }
 
-    public void SetPoseIndexInAnimatorToZero()
-    {
-        _animator.SetInteger("Pose", 0);
-    }
+    //public void SetPoseIndexInAnimatorToZero()
+    //{
+    //   _animator.SetInteger("Pose", 0);
+    //}
 }

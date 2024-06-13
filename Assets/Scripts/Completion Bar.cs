@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class CompletionBar : MonoBehaviour
 {
@@ -20,13 +18,18 @@ public class CompletionBar : MonoBehaviour
         lastClickedCategory = "Initial value";
     }
 
+    private void Update()
+    {
+        ChangeSliderButton();
+    }
+
 
     public void FillTheBar()
     {
         if (clickedCategory == lastClickedCategory) return;
         else
         {
-            float targetValue = _slider.value + 0.3f;
+            float targetValue = _slider.value + 0.2f;
             _slider.DOValue(targetValue, _fillSpeed).SetEase(Ease.InOutQuad);
             AssignLastClickedCategory();
         }
@@ -46,8 +49,15 @@ public class CompletionBar : MonoBehaviour
     {
         if (_slider.value == 1)
         {
-            _continueButton.SetActive(true);
             _heartParticle.GetComponent<ParticleSystem>().Play();
+        }
+    }
+
+    private void ChangeSliderButton()
+    {
+        if (_slider.value == 1)
+        {
+            _continueButton.SetActive(true);
         }
         else
         {
