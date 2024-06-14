@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
 public class ModelLowerBodyController : MonoBehaviour
@@ -38,7 +35,7 @@ public class ModelLowerBodyController : MonoBehaviour
 
         for (int i = 11; i >= 6; i--)
         {
-           if(_currentLowerBodyIndex == i)
+            if (_currentLowerBodyIndex == i)
             {
                 _modelSocksController.ChangeSocksModel(7);
             }
