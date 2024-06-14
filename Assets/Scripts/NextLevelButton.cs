@@ -24,6 +24,8 @@ public class NextLevelButton : MonoBehaviour
         SaveData.Instance.Save();
         UnlockScenes.Instance.UnlockScene();
         SetBasicOutfit();
+        RVManager.Instance._accesoryButton.SetActive(false);
+        RVManager.Instance._accesoryButtonReward.SetActive(true);
     }
 
     public void SetBasicOutfit()

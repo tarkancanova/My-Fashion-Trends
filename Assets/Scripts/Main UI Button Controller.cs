@@ -45,6 +45,21 @@ public class MainUIButtonController : Singleton<MainUIButtonController>
 
         _currentUIndex = newIndex;
     }
+
+    public void ChangeUIReward(int newIndex)
+    {
+        for (int i = 0; i < _objectUI.transform.childCount; i++)
+        {
+            if (i != newIndex)
+            {
+                _objectUI.transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+
+        _objectUI.transform.GetChild(newIndex).gameObject.SetActive(true);
+
+        _currentUIndex = newIndex;
+    }
 }
 
 

@@ -3,6 +3,8 @@ using UnityEngine;
 public class RVManager : MonoBehaviour
 {
     private string reward;
+    public GameObject _accesoryButton;
+    public GameObject _accesoryButtonReward;
 
     public static RVManager Instance { get; private set; }
     private void Awake()
@@ -39,7 +41,9 @@ public class RVManager : MonoBehaviour
                 PoseButtons.Instance.SetPoseIndex(6);
                 break;
             case "Accesory_Call":
-                MainUIButtonController.Instance.ChangeUI(5);
+                MainUIButtonController.Instance.ChangeUIReward(5);
+                _accesoryButton.SetActive(true);
+                _accesoryButtonReward.SetActive(false);
                 break;
             default:
                 Debug.Log("No Reward");
