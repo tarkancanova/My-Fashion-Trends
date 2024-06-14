@@ -33,6 +33,11 @@ public class ModelUpperBodyController : MonoBehaviour
         _currentUpperBodyIndex = newIndex;
     }
 
+    public void SetBasicOutfit()
+    {
+        ChangeUpperBodyModel(16);
+    }
+
     public void RemoveAllUpperBody()
     {
         foreach (var model in _upperBodyModels)

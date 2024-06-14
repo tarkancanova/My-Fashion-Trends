@@ -48,4 +48,10 @@ public class ModelHairController : MonoBehaviour
         }
 
     }
+
+    public void SetBasicOutfit()
+    {
+        ChangeHairModel(0);
+        _modelAccesoryController.ChangeAccesoryModel(16);
+    }
 }

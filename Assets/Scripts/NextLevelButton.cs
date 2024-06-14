@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NextLevelButton : MonoBehaviour
@@ -10,10 +7,10 @@ public class NextLevelButton : MonoBehaviour
     [SerializeField] private GameObject _backgroundSelectionObject;
     [SerializeField] private ProgressionData _progData;
     [SerializeField] private GameObject _progressionBar;
-    [SerializeField] private GameObject _clothesObject;
-    [SerializeField] private GameObject _hairObject;
-    [SerializeField] private GameObject _accObject;
-
+    [SerializeField] public ModelUpperBodyController _modelUpperBodyController;
+    [SerializeField] public ModelLowerBodyController _modelLowerBodyController;
+    [SerializeField] public ModelShoesController _modelShoesController;
+    [SerializeField] public ModelHairController _modelHairController;
     //This script takes player back to background selection screen.
     //DeactivateAllChildren deactivates the children of given parent object and used in this script to deactivate dress, accesory and hair models.
 
@@ -26,6 +23,15 @@ public class NextLevelButton : MonoBehaviour
         PlayerPrefs.DeleteKey("Background");
         SaveData.Instance.Save();
         UnlockScenes.Instance.UnlockScene();
+        SetBasicOutfit();
+    }
+
+    public void SetBasicOutfit()
+    {
+        _modelHairController.SetBasicOutfit();
+        _modelUpperBodyController.SetBasicOutfit();
+        _modelLowerBodyController.SetBasicOutfit();
+        _modelShoesController.SetBasicOutfit();
     }
 
     public void DeactivateAllChildren(Transform parent)

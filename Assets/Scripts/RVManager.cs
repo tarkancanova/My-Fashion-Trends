@@ -38,6 +38,9 @@ public class RVManager : MonoBehaviour
             case "Pose_7":
                 PoseButtons.Instance.SetPoseIndex(6);
                 break;
+            case "Accesory_Call":
+                MainUIButtonController.Instance.ChangeUI(5);
+                break;
             default:
                 Debug.Log("No Reward");
                 break;

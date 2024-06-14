@@ -16,15 +16,19 @@ public class Countdown : MonoBehaviour
 
     private void Start()
     {
-        startButton.onClick.AddListener(StartCountdown);
+        //startButton.onClick.AddListener(StartCountdown);
         countdownDisplay.text = "";
         originalScale = countdownDisplay.transform.localScale;
     }
 
-    void StartCountdown()
+    public void StartCountdown()
     {
         StartCoroutine(CountdownToStart());
         startButton.interactable = false;
+        if (countdownTime > 0)
+        {
+            countdownDisplay.gameObject.SetActive(true);
+        }
     }
 
     IEnumerator CountdownToStart()
@@ -39,13 +43,16 @@ public class Countdown : MonoBehaviour
         countdownDisplay.text = "Go!";
         yield return StartCoroutine(AnimateText());
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
 
         if (countdownTime == 0)
         {
             _screenshotManager.TakeScreenshot();
             _disableUI.OnContinueButtonClick();
             _poseToZero.SetPoseIndexInAnimatorToZero();
+            startButton.interactable = true;
+            countdownDisplay.gameObject.SetActive(false);
+            countdownTime = 3;
         }
 
         countdownDisplay.gameObject.SetActive(false);

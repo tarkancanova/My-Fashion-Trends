@@ -51,4 +51,10 @@ public class ModelLowerBodyController : MonoBehaviour
             model.gameObject.SetActive(false);
         }
     }
+
+    public void SetBasicOutfit()
+    {
+        ChangeLowerBodyModel(15);
+        _modelSocksController.ChangeSocksModel(7);
+    }
 }

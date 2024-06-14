@@ -33,4 +33,9 @@ public class ModelShoesController : MonoBehaviour
 
         _currentShoesIndex = newIndex;
     }
+
+    public void SetBasicOutfit()
+    {
+        ChangeShoesModel(11);
+    }
 }

@@ -29,7 +29,7 @@ public class CompletionBar : MonoBehaviour
         if (clickedCategory == lastClickedCategory) return;
         else
         {
-            float targetValue = _slider.value + 0.2f;
+            float targetValue = _slider.value + 0.15f;
             _slider.DOValue(targetValue, _fillSpeed).SetEase(Ease.InOutQuad);
             AssignLastClickedCategory();
         }
@@ -47,14 +47,19 @@ public class CompletionBar : MonoBehaviour
 
     public void ActivateContinueButton()
     {
-        if (_slider.value == 1)
-        {
-            _heartParticle.GetComponent<ParticleSystem>().Play();
-        }
+        //if (_slider.value > .92f && _slider.value < 1)
+        //{
+        //    _heartParticle.GetComponent<ParticleSystem>().Play();
+        //}
     }
 
     private void ChangeSliderButton()
     {
+        if (_slider.value > .98f && _slider.value < 1)
+        {
+            _heartParticle.GetComponent<ParticleSystem>().Play();
+        }
+
         if (_slider.value == 1)
         {
             _continueButton.SetActive(true);

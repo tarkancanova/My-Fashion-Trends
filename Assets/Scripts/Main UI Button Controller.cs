@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainUIButtonController : MonoBehaviour
+public class MainUIButtonController : Singleton<MainUIButtonController>
 {
     [SerializeField] private GameObject _upperBodyUI;
     [SerializeField] private GameObject _lowerBodyUI;
@@ -25,7 +25,7 @@ public class MainUIButtonController : MonoBehaviour
         }
     }
 
-    private void OnClickButton()
+    public void OnClickButton()
     {
         ChangeUI(uIndex);
     }
