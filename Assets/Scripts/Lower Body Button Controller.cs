@@ -51,7 +51,7 @@ public class LowerBodyButtonController : MonoBehaviour
         completionBar.FillTheBar(); //P. bar progression.
         completionBar.ActivateContinueButton();
         //levelProgressionBar.LevelUp(); //Level bar progression.
-        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
+        //_button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
     }
 
     private void ParticleEffect()

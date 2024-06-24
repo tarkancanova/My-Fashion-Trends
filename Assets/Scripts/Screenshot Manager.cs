@@ -1,3 +1,4 @@
+using CrazyGames;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +19,9 @@ public class ScreenshotManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         _flashEffect.GetComponent<ParticleSystem>().Play();
-
+        CrazySDK.Game.GameplayStop();
+        CrazySDK.Game.HappyTime();
+        SoundManager.Instance.PlayCameraEffect(); // SFX
         // Create a Texture2D with screen width and height
         Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         // Read the screen contents into the texture

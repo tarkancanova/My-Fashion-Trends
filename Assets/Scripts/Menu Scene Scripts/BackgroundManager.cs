@@ -1,3 +1,4 @@
+using CrazyGames;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -66,5 +67,9 @@ public class BackgroundManager : MonoBehaviour
         _messageScreens.SetActive(true);
         _messageScreens.transform.GetChild(backgroundIndex).gameObject.SetActive(true);
 
+        SoundManager.Instance.PlayButtonEffect(); // SFX
+        CrazySDK.Game.GameplayStart();
     }
+
+    
 }

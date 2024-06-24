@@ -49,7 +49,7 @@ public class ShoesButtonController : MonoBehaviour
         completionBar.FillTheBar(); //P. bar progression.
         //levelProgressionBar.LevelUp(); //Level bar progression.
         completionBar.ActivateContinueButton();
-        _button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
+        //_button.onClick.RemoveListener(_buttonListener.LevelProgressionOnClick); //Blocks the level bar progression on clicked dress.
     }
 
     private void ParticleEffect()

@@ -33,6 +33,7 @@ public class MessageScreen : MonoBehaviour
     {
         _messageScene.SetActive(false);
         _inGameUI.SetActive(true);
+        SoundManager.Instance.PlayButtonEffect(); // SFX
     }
     private void VibratePhone()
     {

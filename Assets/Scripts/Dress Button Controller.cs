@@ -21,5 +21,6 @@ public class DressButtonController : MonoBehaviour
     private void OnClickButton()
     {
         _modelDressController.ChangeDressModel(dressIndex);
+        SoundManager.Instance.PlayDressingEffect(); // SFX
     }
 }

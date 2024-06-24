@@ -1,3 +1,4 @@
+using CrazyGames;
 using UnityEngine;
 
 public class PlayScene : MonoBehaviour
@@ -25,6 +26,8 @@ public class PlayScene : MonoBehaviour
             //_backgroundsObject.transform.GetChild(PlayerPrefs.GetInt("Background")).gameObject.SetActive(true);
         }
 
+        SoundManager.Instance.PlayButtonEffect(); // SFX
+        CrazySDK.Game.GameplayStart(); // Analytics
 
     }
 }

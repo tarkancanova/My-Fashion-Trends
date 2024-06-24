@@ -26,6 +26,8 @@ public class NextLevelButton : MonoBehaviour
         SetBasicOutfit();
         RVManager.Instance._accesoryButton.SetActive(false);
         RVManager.Instance._accesoryButtonReward.SetActive(true);
+        SoundManager.Instance.PlayButtonEffect(); // SFX
+        SDKManager.Instance.MidGameVideo();
     }
 
     public void SetBasicOutfit()
